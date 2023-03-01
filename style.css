@@ -1,0 +1,244 @@
+body {
+  /* overflow: hidden;*/
+  text-align: center;
+}
+
+html {
+  background-color: #f7fff1;
+}
+
+.film_bild {
+  background-image: url(bakgrund1.png);
+  width: auto;
+  height: 1000px;
+
+  background-image: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+.gymnasiearbete {
+    font-family: ralewayBOLD;
+    margin-bottom: 20em;
+    color: #374148;
+    font-size: 300%;
+    
+}
+
+.text-gym {
+    text-align: center;
+    font-family:raleway;
+    color: #06b539;
+    font-size: 120%;
+}
+*/
+
+.knapp {
+  /*background:linear-gradient(to bottom, #e8f7dd 5%, #06b539 100%);*/
+  background-color: #44c767;
+  border-radius: 5px;
+  border: 1px solid #06b539;
+
+  cursor: pointer;
+  color: #ffffff;
+  font-family: ralewayMEDIUM;
+
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  /* text-shadow:1px 2px 3px #2f6627; */
+}
+.knapp:hover {
+  /*background:linear-gradient(to bottom, #06b539 5%, #e8f7dd 100%);*/
+  background-color: #5cbf2a;
+}
+.knapp:active {
+  position: relative;
+  top: 1px;
+}
+
+/* The navigation bar */
+nav {
+  /*background-color: #333;*/
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  overflow: hidden;
+}
+
+/* Links inside the navbar */
+nav a {
+  float: right;
+  display: block;
+  color: #707070;
+  text-align: center;
+  padding: 5vw 2vw;
+  text-decoration: none;
+  font-family: ralewayBOLD;
+  margin-right: 8em;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.menuu {
+  margin-left: 2em;
+}
+
+/* Change background on mouse-over */
+.menu a:hover {
+  /*background: #ddd;*/
+  color: #707070;
+}
+
+a {
+  margin: auto;
+  padding-bottom: 50em;
+  border: 10em;
+}
+
+/*.dot { //en start på min bubble struktur som ska vara i bakgrunden
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  top: 5em;
+}
+
+.titel1 {
+  /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+/*
+  float: right;
+  margin-right: 30em;
+  font-size: 120%;
+  font-family: ralewayREG;
+  color: #374148;
+}
+*/
+/*
+.titel2 {
+  font-family: ralewayBOLD;
+  color: #374148;
+}
+*/
+#gym_head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-family: ralewayBOLD;
+  color: #374148;
+  font-size: 300%;
+  margin-top: 2em;
+  /* text-shadow: 2px 2px 12px #374148; */
+}
+
+#gym_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 7em; /*AV STÅND MELLAN KNAPP OCH TEXT :]*/
+
+  font-family: ralewayLIGHT;
+  color: #06b539;
+  font-size: 120%;
+  /* text-shadow: 2px 2px 12px #5cbf2a; */
+}
+
+#content1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+#content1 {
+  font-family: ralewayREG;
+}
+#content2 {
+  font-family: ralewayBOLD;
+}
+
+#content2::after {
+  content: "\a";
+  white-space: pre;
+}
+
+@media only screen and (max-width: 500px) {
+  #gym_text {
+    /* TEXTEN SOM STÅR NEDAN FÖR TITELN "BLA BLA BLA" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 7em; /*AV STÅND MELLAN KNAPP OCH TEXT :]*/
+
+    font-family: ralewayBOLD;
+    color: #06b539;
+    font-size: 120%;
+    /* text-shadow: 2px 2px 12px #5cbf2a; */
+  }
+
+  #gym_head {
+    /* TITELN PÅ HEMSIDAN "GYMNASIEARBETE" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    font-family: ralewayBOLD;
+    color: #374148;
+    font-size: 200%;
+    margin-top: 4em;
+    /* text-shadow: 2px 2px 12px #374148; */
+  }
+
+  /*.film_bild {
+    display: none;
+  }*/
+  .menuu {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+
+  .knapp {
+    display: none;
+  }
+
+  .film_bild {
+    /* display: none; */
+    background-image: url("");
+  }
+}
+
+@font-face {
+  font-family: ralewayBOLD;
+  src: url(Raleway/static/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: ralewayMEDIUM;
+  src: url(Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: ralewayLIGHT;
+  src: url(Raleway/static/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: ralewayTHIN;
+  src: url(Raleway/static/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: ralewayBLACK;
+  src: url(Raleway/static/Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family: ralewayREG;
+  src: url(Raleway/static/Raleway-Regular.ttf);
+}
